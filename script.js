@@ -1,12 +1,16 @@
-const targetDate = '18 Nov 2022';
+// const targetDate = '18 Nov 2022';
+
+const targetDate = '2022-11-17 23:59:59';
+const iPhoneDate = convertDateForIos(targetDate)
 
 const daysEl = document.getElementById('days')
 const hoursEl = document.getElementById('hours')
 const minsEl = document.getElementById('mins')
 const secondsEl = document.getElementById('seconds')
 
+
 function countdown() {
-    const newDate = new Date(convertDateForIos(targetDate));
+    const newDate = new Date(iPhoneDate);
     let currentDate = new Date();
 
     return(Math.abs(newDate - currentDate));
