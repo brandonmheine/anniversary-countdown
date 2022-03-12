@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&family=Source+Sans+Pro&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-image: url('goat.jpg');
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 4rem;
+     margin-top: 5rem;
+}
+
+.countdown-container {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.big-text {
+    font-weight: bold;
+    font-size: 6rem;
+    line-height: 1;
+    margin: 0 5rem;
+}
+
+.countdown-el {
+    text-align: center;
+}
+
+.countdown-el span {
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width: 640px) {
+    .countdown-container {
+        flex-direction: column;
+        color: white;
+    }
+}
